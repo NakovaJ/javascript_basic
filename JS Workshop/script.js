@@ -26,6 +26,7 @@ $('button:first').click(function(){
 // 30 mins
 
 
+arrayNumbersDivisibleBy3And7=[];
 function result() 
 {      
     
@@ -34,11 +35,13 @@ function result()
      
         if ((Math.floor(i/10)+(i%10)) % 3 == 0 && i%7==0)
             {
-               
+               arrayNumbersDivisibleBy3And7.push(i);
             }
     } 
 }
 result();
+console.log(arrayNumbersDivisibleBy3And7)
+
 
 
 // 3. Create a Javascript ATM machine. 
